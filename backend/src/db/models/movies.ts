@@ -1,5 +1,5 @@
 import * as Mongoose from 'mongoose';
-import { Document, Model, model} from 'mongoose';
+import { Document, Model, model } from 'mongoose';
 import { IMovies } from './IMovies';
 
 export interface IMoviesModel extends IMovies, Document {}
@@ -23,6 +23,7 @@ const movieSchema = new Mongoose.Schema({
   }
 });
 
-export const movies: Model<IMoviesModel> = model<
-IMoviesModel
->('movies', movieSchema);
+export const movies: Model<IMoviesModel> = model<IMoviesModel>(
+  'movies',
+  movieSchema
+);

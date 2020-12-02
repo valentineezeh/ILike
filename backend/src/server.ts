@@ -1,6 +1,6 @@
 import app from './app';
 import config from './config';
-import { connect } from './db/db'
+import { connect } from './db/db';
 
 const PORT = config.port;
 connect();

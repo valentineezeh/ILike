@@ -15,7 +15,7 @@ app.use(
 );
 app.use(compression());
 app.use(cors());
-app.use(API_VERSION, movieRouter)
+app.use(API_VERSION, movieRouter);
 
 app.get('/', (req, res) => {
   res.status(200).send({
@@ -23,5 +23,3 @@ app.get('/', (req, res) => {
   });
 });
 export default app;
-
-

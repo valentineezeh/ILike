@@ -12,14 +12,14 @@ export const connect = () => {
     useNewUrlParser: true,
     useFindAndModify: true,
     useUnifiedTopology: true,
-    useCreateIndex: true,
+    useCreateIndex: true
   });
   database = Mongoose.connection;
-  database.once("open", async () => {
-    console.log("Connected to database");
+  database.once('open', async () => {
+    console.log('Connected to database');
   });
-  database.on("error", () => {
-    console.log("Error connecting to database");
+  database.on('error', () => {
+    console.log('Error connecting to database');
   });
 };
 export const disconnect = () => {

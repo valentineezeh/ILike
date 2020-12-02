@@ -1,4 +1,4 @@
-import {movies} from '../db/models/movies';
+import { movies } from '../db/models/movies';
 
 class MoviesServices {
   // method that add to the db
@@ -7,15 +7,15 @@ class MoviesServices {
   }
   // methods that get from the db
   async get() {
-    return movies.find()
+    return movies.find();
   }
   // method that update the db
   async update(movieId: number) {
     return movies.findOneAndUpdate(
-      {_id: movieId},
+      { _id: movieId },
       {
-        $inc: {'likeCount': 1}, // increment likeCount by 1
-        $set: {updatedAt: new Date()} // add new updated date
+        $inc: { likeCount: 1 }, // increment likeCount by 1
+        $set: { updatedAt: new Date() } // add new updated date
       },
       { new: true }
     );

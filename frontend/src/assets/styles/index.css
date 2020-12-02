@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.like-button {
+  height: 20px;
+  width: 20px;
+  color: rgb(0, 127, 231);
+  cursor: pointer;
+}
+
+.loader_style {
+  position: relative;
+  left: 45vw;
+  top: 20vh;
+}

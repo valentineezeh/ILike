@@ -4,7 +4,7 @@
   "description": "ILike Backend service",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build && node dist/server.js",
+    "start": "node dist/server.js",
     "build": "tsc -p .",
     "build:live": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/server.ts",
     "prettier:check": "npm run prettier:base -- --list-different \"src/**/*.{ts,tsx}\"",

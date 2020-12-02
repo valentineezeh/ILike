@@ -20,6 +20,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "homepage": "http://18.130.163.40:7000/api",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

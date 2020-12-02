@@ -27,7 +27,7 @@
 | Endpoint                                             | Functionality                      |
 | ---------------------------------------------------- | ---------------------------------- |
 | POST /api/add-movie                                  | Create Movie                       |
-| PATCH /api/movie/\<id>                               | Like a Movie                       |
+| PATCH /api/movie/\<movieId>                               | Like a Movie                       |
 | GET /movies                                          | Get all movies                     |
 
 ## AUTHOR

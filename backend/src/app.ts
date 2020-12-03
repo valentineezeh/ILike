@@ -17,7 +17,7 @@ app.use(compression());
 app.use(cors());
 app.use(API_VERSION, movieRouter);
 
-app.get('/', (req, res) => {
+app.get(API_VERSION, (req, res) => {
   res.status(200).send({
     message: 'ILike Service is running here'
   });

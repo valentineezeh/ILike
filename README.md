@@ -18,7 +18,7 @@
 
 ## Features
 
-- Create a mongo db with name ILike
+- Create a mongo db with name I-Like
 - Create movie
 - Get all movie list
 - Like a movie by clicking on the like button this increase the like number by 1

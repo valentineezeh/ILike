@@ -6,6 +6,7 @@
 - MongoDB, Mongoose
 - Libraries: Es6, eslint, express, babel, typescript
 - Frontend: React/Redux/Bootstrap/Axios
+- AWS (For deployment)
 
 ## To Install
 
@@ -22,16 +23,17 @@
 - Get all movie list
 - Like a movie by clicking on the like button this increase the like number by 1
 
+## Deployed Links
+- Backend Link: http://18.130.163.40:7000/api
+- Frontend Link: http://18.130.163.40:3000/
+
 ## API Endpoints
 
 | Endpoint                                             | Functionality                      |
 | ---------------------------------------------------- | ---------------------------------- |
 | POST /api/add-movie                                  | Create Movie                       |
-| PATCH /api/movie/\<movieId>                               | Like a Movie                       |
+| PATCH /api/movie/\<movieId>                          | Like a Movie                       |
 | GET /movies                                          | Get all movies                     |
-
-## AUTHOR
-[Valentine Ezeh](https://github.com/valentineezeh/ILike)
 
 ## Bonus Challenge
 ### How can you improve the feature to make it more resilient against abuse/exploitation?
@@ -56,3 +58,5 @@ When we have over a million user concurrently hitting the like button, there is 
 - Load Balancing:
 I will add a load balancer that evenly distributes the user actions across the servers. For this, I can implement a round-robin method which sends each request to the server on a cyclical basis
 
+## AUTHOR
+[Valentine Ezeh](https://github.com/valentineezeh/ILike)
